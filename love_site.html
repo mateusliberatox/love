@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Meu Amor</title>
+    
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts para uma tipografia elegante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf2f8; /* Um tom de rosa bem clarinho */
+        }
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Animação de coração pulsando */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .heart-pulse {
+            animation: pulse 2s infinite;
+        }
+        /* Estilo para a linha do tempo */
+        .timeline-item {
+            position: relative;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            border-left: 2px solid #f472b6; /* Rosa */
+        }
+        .timeline-item:last-child {
+            border-left: none;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -11px;
+            top: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: #f472b6; /* Rosa */
+            border: 4px solid #fdf2f8; /* Cor de fundo */
+        }
+        /* Efeito de revelação suave */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Seção Principal (Hero) -->
+    <header class="reveal text-center py-16 md:py-24 px-4 bg-white shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="font-title text-4xl md:text-6xl text-pink-500 mb-4">Feliz Dia dos Namorados, Meu Amor!</h1>
+            <!-- IMPORTANTE: Troque o nome "SEU NOME" e "NOME DELA" -->
+            <p class="text-lg md:text-xl text-gray-600">Uma pequena viagem pela nossa história.</p>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">De: Mateus ❤️ Para: [Nome da sua namorada]</p>
+        </div>
+    </header>
+
+    <!-- Linha do Tempo da Nossa História -->
+    <main class="max-w-3xl mx-auto p-8 md:p-12">
+        <h2 class="font-title text-3xl md:text-4xl text-center mb-12 reveal text-pink-500">Nosso Caminho Juntos</h2>
+
+        <div class="timeline">
+            <!-- ITEM 1 DA LINHA DO TEMPO -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="pl-4">
+                    <!-- IMPORTANTE: Troque a imagem abaixo. Use uma URL de imagem sua. 
+                         Você pode hospedar imagens em sites como https://imgur.com/ e colar o link direto aqui. -->
+                    <img src="https://placehold.co/800x600/fbcfe8/4a044e?text=Foto+Nossa+1" 
+                         alt="Descrição da foto de vocês" class="rounded-xl shadow-lg w-full mb-4">
+                    <h3 class="font-title text-2xl text-pink-600 mb-2">O Início de Tudo</h3>
+                    <!-- IMPORTANTE: Escreva sua própria mensagem aqui -->
+                    <p class="text-gray-700">Lembro como se fosse hoje do dia em que nos conhecemos. Mal sabia eu que aquele momento mudaria minha vida para sempre. Seu sorriso iluminou tudo e, desde então, ele é a minha luz.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 2 DA LINHA DO TEMPO -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="pl-4">
+                    <!-- IMPORTANTE: Troque a imagem -->
+                    <img src="https://placehold.co/800x600/f9a8d4/4a044e?text=Foto+Nossa+2" 
+                         alt="Descrição da foto de vocês" class="rounded-xl shadow-lg w-full mb-4">
+                    <h3 class="font-title text-2xl text-pink-600 mb-2">Nossa Primeira Viagem</h3>
+                    <!-- IMPORTANTE: Escreva sua própria mensagem aqui -->
+                    <p class="text-gray-700">Aquela viagem marcou o quanto somos parceiros. Cada paisagem ficou mais bonita com você ao meu lado. Foi ali que tive a certeza de que quero explorar o mundo inteiro com você.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 3 DA LINHA DO TEMPO -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="pl-4">
+                    <!-- IMPORTANTE: Troque a imagem -->
+                    <img src="https://placehold.co/800x600/f472b6/4a044e?text=Foto+Nossa+3" 
+                         alt="Descrição da foto de vocês" class="rounded-xl shadow-lg w-full mb-4">
+                    <h3 class="font-title text-2xl text-pink-600 mb-2">Momentos Simples e Perfeitos</h3>
+                    <!-- IMPORTANTE: Escreva sua própria mensagem aqui -->
+                    <p class="text-gray-700">São os momentos simples que mais aquecem meu coração. Um filme no sofá, uma risada boba, um jantar que preparamos juntos. A felicidade mora nos detalhes que compartilhamos.</p>
+                </div>
+            </div>
+
+            <!-- ITEM 4 DA LINHA DO TEMPO -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="pl-4">
+                    <!-- IMPORTANTE: Troque a imagem -->
+                    <img src="https://placehold.co/800x600/ec4899/4a044e?text=Foto+Nossa+4" 
+                         alt="Descrição da foto de vocês" class="rounded-xl shadow-lg w-full mb-4">
+                    <h3 class="font-title text-2xl text-pink-600 mb-2">Hoje e Sempre</h3>
+                    <!-- IMPORTANTE: Escreva sua própria mensagem aqui -->
+                    <p class="text-gray-700">Olhar para trás e ver tudo que construímos me enche de orgulho. Olhar para frente e imaginar nosso futuro me enche de esperança e amor. Eu te amo mais a cada dia que passa.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Seção de Mensagem Final -->
+    <section class="bg-white py-16 md:py-24 px-4 reveal">
+        <div class="max-w-3xl mx-auto text-center">
+            <svg class="mx-auto h-12 w-12 text-pink-400 heart-pulse mb-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+            </svg>
+            <h2 class="font-title text-3xl md:text-4xl text-pink-500 mb-4">Uma Mensagem do Fundo do Coração</h2>
+            <!-- IMPORTANTE: Escreva sua carta de amor aqui -->
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Meu amor, criar esta página foi a forma que encontrei de materializar um pouco do que sinto por você. Cada foto, cada lembrança, é um tijolo na construção do nosso amor. Você é minha parceira, minha melhor amiga, a pessoa que torna meus dias mais felizes e completos. Obrigado por ser quem você é e por me permitir fazer parte da sua vida.
+                <br><br>
+                <strong>Eu te amo infinitamente.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-8">
+        <p class="text-gray-500">Feito com todo o meu amor, para a mulher da minha vida.</p>
+        <!-- IMPORTANTE: Troque o nome "SEU NOME" -->
+        <p class="text-pink-500 font-bold mt-1">Mateus</p>
+    </footer>
+
+    <script>
+        // Script para a animação de revelação ao rolar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1 // O elemento se torna visível quando 10% dele está na tela
+            });
+
+            revealElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>
